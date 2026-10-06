@@ -19,6 +19,13 @@ jobs:
       - name: Check out
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
+      - name: Make NSIS available
+        shell: pwsh
+        run: |
+          $nsis = 'C:\Program Files (x86)\NSIS'
+          if (-not (Test-Path "$nsis\makensis.exe")) { choco install nsis -y --no-progress }
+          Add-Content -Path $env:GITHUB_PATH -Value $nsis
+
       - name: Build
         shell: pwsh
         run: ./scripts/build.ps1
