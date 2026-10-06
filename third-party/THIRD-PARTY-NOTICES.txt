@@ -1,0 +1,35 @@
+ACE Dell Control uses locally installed third-party components:
+
+1. DellFanManagement tools, version 2.1.1, by Aaron Kelley
+   https://github.com/AaronKelley/DellFanManagement
+   License: GPL-3.0
+
+2. LibreHardwareMonitor, version 0.9.6
+   https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
+   License: Mozilla Public License 2.0
+
+3. bzh-windrv-dell-smm-io fan driver, by 424778940z
+   https://github.com/424778940z/bzh-windrv-dell-smm-io
+   License: GPL-3.0
+
+4. PawnIO.Modules 0.2.2, embedded in LibreHardwareMonitorLib
+   https://github.com/namazso/PawnIO.Modules
+   License: LGPL-2.1
+
+5. Costura.Fody 4.1.0, merged into DellFanCmd.exe
+   https://github.com/Fody/Costura
+   License: MIT
+
+6. System.Memory 4.6.3, System.Buffers 4.6.1,
+   System.Numerics.Vectors 4.6.1, and
+   System.Runtime.CompilerServices.Unsafe 6.1.2, by Microsoft
+   https://www.nuget.org/packages/System.Memory/4.6.3
+   License: MIT
+
+The original tools and their license terms remain applicable. Source snapshots
+for the named projects are in the installed source folder, alongside ACE Dell
+Control's application source file. The driver and tool binaries match the
+official DellFanManagement 2.1.1 release assets; the archived driver source
+has code unchanged since the driver's 2015 build date. Full license texts are
+in the installed licenses folder. The ACE GUI itself is licensed under GPL-3.0-only (see the LICENSE file in the
+source repository). This is a technical preview build.

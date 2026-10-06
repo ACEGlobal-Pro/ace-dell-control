@@ -1,0 +1,8 @@
+<Configuration>
+  <Networking>Disable</Networking>
+  <vGPU>Disable</vGPU>
+  <MappedFolders>
+    <MappedFolder><HostFolder>C:\dell-control</HostFolder><SandboxFolder>C:\dc</SandboxFolder><ReadOnly>false</ReadOnly></MappedFolder>
+  </MappedFolders>
+  <LogonCommand><Command>C:\dc\sbx-run.cmd</Command></LogonCommand>
+</Configuration>

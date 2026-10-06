@@ -1,0 +1,16 @@
+ACE Dell Control technical preview build notes
+
+The ACE GUI is C# source at the installation root (ACE.Dell.Control.cs)
+and uses the adjacent app.manifest. On Windows x64 with .NET Framework
+4.7.2 or later, the built-in C# compiler can build it with:
+
+  C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /target:winexe /platform:x64 /optimize+ /out:"ACE Dell Control.exe" /win32manifest:app.manifest /reference:System.dll /reference:System.Core.dll /reference:System.Drawing.dll /reference:System.Management.dll /reference:System.Windows.Forms.dll ACE.Dell.Control.cs
+
+This preview installer is compiled with NSIS 3 using the adjacent
+ACE-Dell-Control-Preview.nsi script. Its staging paths correspond to the
+installed files, source archives and licenses. Source archives for the GPL,
+MPL and LGPL components are in this folder. The Microsoft MIT-licensed DLLs
+match their official NuGet packages listed in DEPENDENCY-MANIFEST.txt.
+
+This file documents the build process; it is not a grant of additional
+license rights. The ACE GUI is licensed under GPL-3.0-only (see LICENSE).

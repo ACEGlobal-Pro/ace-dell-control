@@ -1,0 +1,21 @@
+ACE Dell Control - Technical Preview
+
+This package is for review and testing, not general Dell laptop distribution.
+It installs on 64-bit Windows 10/11 with .NET Framework 4.7.2 or later.
+
+Only the Dell Latitude 7400 has been tested for Dell thermal and fan commands.
+On every other model, this build disables Dell thermal and fan controls.
+Windows CPU power controls and monitoring remain available, subject to the
+hardware sensors supported by LibreHardwareMonitor.
+
+The application and setup request Administrator permission. This setup is
+currently unsigned and may display Windows security warnings. Do not bypass
+security policy on a managed computer.
+
+This package contains GPL-3.0 DellFanManagement and fan-driver components,
+MPL-2.0 LibreHardwareMonitor, LGPL-2.1 PawnIO modules, and MIT .NET support
+libraries. Source snapshots and license texts are included in the installed
+folders. The bundled tool binaries match their official releases. The ACE GUI is licensed under GPL-3.0-only; the bundled components keep
+their own licenses. Redistribution must comply with each license.
+
+No BIOS or firmware flashing is performed.

@@ -1,0 +1,46 @@
+ACE Dell Control technical preview dependency manifest
+
+Runtime files installed by this package:
+
+- DellFanCmd.exe 2.1.1, DellFanLib.dll 2.1.1, and
+  DellSetThermalSetting.exe 2.1.1: GPL-3.0, Aaron Kelley.
+  Project and corresponding release source:
+  https://github.com/AaronKelley/DellFanManagement
+  All three installed binaries match the official 2.1.1 release assets
+  byte-for-byte (SHA-256 comparison).
+
+- bzh_dell_smm_io_x64.sys: GPL-3.0, 424778940z.
+  Source snapshot:
+  https://github.com/424778940z/bzh-windrv-dell-smm-io/tree/67786c69a80f2dd3e0d948cfaba6ced6c2c090e3
+  The installed binary matches the official DellFanCmd 2.1.1 asset
+  byte-for-byte and Windows 11 reports its Aaron Kelley signature as valid.
+  Its PE build timestamp is 2015-09-05; the source code did not change
+  between that date and the archived 2016 snapshot (only LICENSE was added).
+  Rebuilding a bit-identical driver has not been attempted.
+
+- LibreHardwareMonitorLib.dll 0.9.6: MPL-2.0.
+  Source: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases/tag/v0.9.6
+  The library includes PawnIO.Modules 0.2.2 modules under LGPL-2.1.
+  Source: https://github.com/namazso/PawnIO.Modules/releases/tag/0.2.2
+  (Tag commit e12a858d952461ee2e919897cacbff7f905fe370)
+  ACE enables only CPU hardware in this library. RAM usage and fan RPM are
+  obtained independently, so unrelated LHM libraries are not distributed.
+  The installed DLL matches the official v0.9.6 release asset byte-for-byte.
+
+- Costura.Fody 4.1.0: MIT, merged into DellFanCmd.exe.
+  Source: https://github.com/Fody/Costura
+  (NuGet package https://www.nuget.org/packages/Costura.Fody/4.1.0)
+
+- System.Memory.dll 4.6.3, System.Buffers.dll 4.6.1,
+  System.Numerics.Vectors.dll 4.6.1, and
+  System.Runtime.CompilerServices.Unsafe.dll 6.1.2: MIT,
+  .NET Foundation and contributors. Their file hashes match the net462
+  binaries in the corresponding official NuGet packages:
+  https://www.nuget.org/packages/System.Memory/4.6.3
+  https://www.nuget.org/packages/System.Buffers/4.6.1
+  https://www.nuget.org/packages/System.Numerics.Vectors/4.6.1
+  https://www.nuget.org/packages/System.Runtime.CompilerServices.Unsafe/6.1.2
+
+Full license texts are in the licenses folder. Source snapshots for the
+copyleft components are in the source folder. This manifest is a technical
+inventory, not a legal clearance certificate.
