@@ -1,6 +1,6 @@
 # Building and smoke-testing ACE Dell Control (technical preview)
 
-All building and testing is done locally. The only use of GitHub Actions is the release-only workflow (`.github/workflows/release.yml`), which runs on version tags to build and sign a release.
+All building, testing and release builds are done locally. The project does not use GitHub Actions or other hosted CI. (Preview 2 was built once by a hosted release workflow, since removed.)
 
 ## Build
 

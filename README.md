@@ -34,8 +34,7 @@ and `docs/LICENSING.md`). Not affiliated with or endorsed by Dell Inc.
 ## Building
 
 Local build on Windows x64 with .NET Framework 4.x and NSIS 3. See
-`docs/BUILD.md`. A release-only GitHub Actions workflow builds and signs tagged
-releases; nothing else runs in the cloud.
+`docs/BUILD.md`. Releases are built locally too; nothing runs in the cloud.
 
 ## Third-party components
 

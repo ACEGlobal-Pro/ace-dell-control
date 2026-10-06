@@ -19,17 +19,16 @@ this policy describes how signing will work if the project is accepted.
 ## What is signed
 
 `ACE Dell Control.exe` and the installer, built from this repository's own
-source by the release workflow (`.github/workflows/release.yml`) from a tagged
-commit. Upstream binaries (DellFanCmd, DellSetThermalSetting,
+source from a tagged commit. Upstream binaries (DellFanCmd, DellSetThermalSetting,
 LibreHardwareMonitor, the fan driver) are third-party components shipped as
 received, unmodified and matched by hash to the upstream release. They are not
 re-signed by this project.
 
 ## Build and verification
 
-Release builds run on a GitHub-hosted Windows runner using `scripts/build.ps1`
-and are submitted to SignPath for signing. All other building and testing is
-done locally (`docs/BUILD.md`). Each release publishes SHA-256 hashes
+Release builds use `scripts/build.ps1` and are made locally (`docs/BUILD.md`).
+If the project is accepted for SignPath signing, which needs a verifiable hosted
+build, a release-only workflow would be reintroduced for that purpose only. Each release publishes SHA-256 hashes
 (`SHA256SUMS.txt`). A release is approved only after the review items listed in
 `docs/STATUS.md` that gate a release are closed.
 

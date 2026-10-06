@@ -10,8 +10,8 @@ Technical preview: not a released or cleared product. Licensed GPL-3.0-only.
   on hardware unless the maintainers have explicitly asked for that test.
 - No BIOS or firmware writes, no UAC or SmartScreen bypass, no custom root certificate.
 - `third-party/` holds upstream binaries and sources verbatim; never edit them.
-- Building and testing are done locally (see `docs/BUILD.md`). GitHub Actions is
-  used for release builds only (`.github/workflows/release.yml`).
+- Building, testing and release builds are all done locally (see `docs/BUILD.md`).
+  The project does not use GitHub Actions or other hosted CI.
 
 ## Where things are
 
