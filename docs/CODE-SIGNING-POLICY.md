@@ -1,12 +1,14 @@
 # Code signing policy
 
-Free code signing provided by [SignPath.io](https://signpath.io), certificate by
-[SignPath Foundation](https://signpath.org).
+Intended route: free code signing provided by [SignPath.io](https://signpath.io),
+certificate by [SignPath Foundation](https://signpath.org) (not yet accepted).
 
-Status: signing has been applied for through the SignPath Foundation open-source
-programme. No release has been signed yet. Releases to date are unsigned
-previews, which Windows Smart App Control blocks. Eligibility is the
-Foundation's decision and is not assumed.
+Status (October 2026): **releases are unsigned.** The project applied to the
+SignPath Foundation open-source programme; the Foundation declined for now
+because the project does not yet have enough public visibility, and invited a
+new application later. Until a release is signed, Windows shows an "Unknown
+publisher" warning and Windows Smart App Control blocks the app. The rest of
+this policy describes how signing will work if the project is accepted.
 
 ## Roles
 

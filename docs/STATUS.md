@@ -17,7 +17,7 @@ Technical preview. Not a stable release.
 
 ## Known limitations
 
-- Unsigned. Windows Smart App Control blocks the app, and some antivirus products may too. Do not turn off Windows security features to run it. Signing plan: `docs/CODE-SIGNING-POLICY.md`.
+- Unsigned (the SignPath Foundation declined the October 2026 application for now: the project is too new). Windows Smart App Control blocks the app, and some antivirus products may too. Do not turn off Windows security features to run it. Signing plan: `docs/CODE-SIGNING-POLICY.md`.
 - The bundled fan driver loads on machines with Memory Integrity enabled only because a Windows code-integrity policy is in audit mode. If Microsoft enforces that policy, fan control will stop working on those machines.
 - Restoring Dell automatic fan control is best effort. After a crash or power loss, restart the laptop.
 - Open review items: guard process and boot task (H2), driver access-rights check (H5), SKU and BIOS gate (M5), restore before upgrade (M7), Turbo setting (M9).

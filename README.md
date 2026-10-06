@@ -53,8 +53,10 @@ it. See `PRIVACY.md`.
 
 ## Code signing policy
 
-Free code signing provided by SignPath.io, certificate by SignPath Foundation
-(applied for; releases to date are unsigned). See `docs/CODE-SIGNING-POLICY.md`.
+Releases are currently **unsigned**. The project applied to the SignPath
+Foundation's free open-source signing programme in October 2026 and was not
+accepted yet because it is new; it may reapply once it is more established.
+See `docs/CODE-SIGNING-POLICY.md`.
 
 ## No warranty
 
