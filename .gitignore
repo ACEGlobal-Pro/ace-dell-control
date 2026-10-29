@@ -2,3 +2,6 @@ build/
 out/
 *.log
 .DS_Store
+
+# Built copies (the Windows build output lives here, not in git)
+dist/
